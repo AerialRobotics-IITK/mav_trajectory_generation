@@ -1,0 +1,5 @@
+<launch>
+<node pkg="mav_trajectory_generation_ros" type="test_node" name="test_node" clear_params="true" output="screen">
+		<rosparam file="$(find mav_trajectory_generation_ros)/param/test_node.yaml" />
+</node>
+</launch>

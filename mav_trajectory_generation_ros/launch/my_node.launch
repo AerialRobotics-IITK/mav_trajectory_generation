@@ -1,0 +1,9 @@
+
+<launch>
+    <arg name="mav_name" default="firefly" />
+    <arg name="namespace" default="$(arg mav_name)"/>
+    <group ns="$(arg namespace)">
+        <node pkg="mav_trajectory_generation_ros" type="my_node" name="my_node" clear_params="true" output="screen"/>
+        <node pkg="mav_trajectory_generation_ros" type="trajectory_sampler_node" name="my_sampler_node" clear_params="true" output="screen"/>
+    </group>
+</launch>

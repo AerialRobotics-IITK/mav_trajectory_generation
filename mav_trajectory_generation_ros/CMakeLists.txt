@@ -33,6 +33,21 @@ cs_add_executable(time_evaluation_node
 )
 target_link_libraries(time_evaluation_node ${PROJECT_NAME})
 
+cs_add_executable(test_node
+  src/test_node.cpp
+)
+target_link_libraries(test_node ${PROJECT_NAME})
+
+cs_add_executable(my_node
+  src/my_node.cpp
+)
+target_link_libraries(my_node ${PROJECT_NAME})
+
+#cs_add_executable(waypoint_node
+#  src/waypoint_node.cpp
+#)
+# target_link_libraries(waypoint_node ${PROJECT_NAME})
+
 #########
 # TESTS #
 #########
